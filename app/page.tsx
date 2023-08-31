@@ -1,6 +1,9 @@
 import { HomeAbout } from "@/components/Home.about";
+import { HomeFooter } from "@/components/Home.footer";
 import { HomePortafolio } from "@/components/Home.portafolio";
 import { HomeSkills } from "@/components/Home.skills";
+import { BsArrowDown } from "react-icons/bs"
+import Link from "next/link";
 
 export default function Home() {
 	return (
@@ -27,34 +30,28 @@ export default function Home() {
 								</p>
 							</div>
 
-							<a
+							<Link
 								href="#about"
 								className="flex 
-				  overflow-hidden 
-				  w-[64px] lg:w-[120px] 
-				  h-[64px] lg:h-[120px] 
-				  min-h-[64px] lg:min-h-[120px] 
-				  min-w-[64px] lg:min-w-[120px] 
-				  mt-[24px]  lg:mt-[74px] 
-				  justify-center 
-				  items-center 
-				  rounded-full 
-				  bg-[#075fe4] 
-				  transition-transform 
-				  text-white 
-				  text-[28px] lg:text-[50px] 
-				  leading-[1em] 
-				  p-[22px] lg:p-0
-				  no-underline
-				  ">
-
-								<div className="line-square-icon"
-									style={{
-										transform: "translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)", transformStyle: "preserve-3d"
-									}}>
-									{/* <ChevronDownIcon className="h-12 w-12" /> */}
-								</div>
-							</a>
+								overflow-hidden 
+								w-[64px] lg:w-[120px] 
+								h-[64px] lg:h-[120px] 
+								min-h-[64px] lg:min-h-[120px] 
+								min-w-[64px] lg:min-w-[120px] 
+								mt-[24px]  lg:mt-[74px] 
+								justify-center 
+								items-center 
+								rounded-full 
+								bg-[#075fe4] 
+								transition-transform 
+								text-white 
+								text-[28px] lg:text-[50px] 
+								leading-[1em] 
+								p-[22px] lg:p-0
+								no-underline"
+							>
+								<BsArrowDown size={40}></BsArrowDown>
+							</Link>
 						</div>
 						<div className="max-w-full lg:max-w-[342px] justify-self-start lg:justify-self-end col-start-[span 1]">
 

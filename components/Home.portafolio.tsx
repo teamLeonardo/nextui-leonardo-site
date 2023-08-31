@@ -1,6 +1,10 @@
+"use client"
 import Image from "next/image"
 import Link from "next/link"
-
+import { Chip } from "@nextui-org/react"
+import { FaReact, FaJs } from 'react-icons/fa';
+import { BiLogoPostgresql } from 'react-icons/bi';
+import { DiHtml5 } from "react-icons/di"
 export const HomePortafolio = () => (
   <section className="relative bg-[#242a33] pb-[240px] pt-[240px] z-20">
     <div className="container mx-auto max-w-7xl px-[24px]">
@@ -28,75 +32,96 @@ export const HomePortafolio = () => (
               <div >
                 <Link
                   href="/portfolio/agency-website-development-for-dev-x"
-                  className="relative overflow-hidden no-underline rounded-[28px] bg-[#2d343f] max-w-full inline-block"
+                  className="relative overflow-hidden no-underline rounded-[28px] bg-[#2d343f] max-w-full inline-block w-full"
                 >
-                  <div className="badges-top-wrapper">
-                    <div className="badge-primary small">React JS</div>
-                    <div className="badge-primary small">Web Development</div>
+                  <div
+                    className="absolute top-[32px] right-[32px] z-[1] grid auto-cols-fr gap-x-[16px] gap-y-[16px] grid-cols-[auto,auto] grid-rows-[auto]"
+                  >
+                    <Chip
+                      variant="bordered"
+                      color="primary"
+                      startContent={<FaReact size={18} />}
+                    >
+                      React
+                    </Chip>
+                    <Chip
+                      variant="bordered"
+                      color="warning"
+                      startContent={<BiLogoPostgresql size={18} />}
+                    >
+                      PostgreSQL
+                    </Chip>
                   </div>
-                  <div className="portfolio-project-card-text-container">
-                    <div className="portfolio-project-logo-wrapper">
-                      {/* <Image layout="fill"
-                        src="https://assets.website-files.com/622fbc5a718ac357e4cd3da3/623227559d5ce413c3045d1e_dev-project-logo-developer-webflow-ecommerce-template.png"
-                        alt="Agency Website Development for Dev X" /> */}
+                  <div
+                    className="relative z-[1] max-w-[430px] mt-[90px] mr-[34px] mb-[-24px] ml-[34px]"
+                  >
+                    <div className="text-[#e62e04] text-[34px] leading-[1.441em] font-bold mb-0">
+                      AliNext
                     </div>
-                    <h2 className="display-5 mg-bottom-0">Agency Website Development for Dev X</h2>
+                    <h2 className="text-white text-[34px] leading-[1.441em] font-bold mb-0">
+                      Tienda clone de AliexPress
+                    </h2>
                   </div>
-                  {/* <Image layout="fill"
-                    src="https://assets.website-files.com/622fbc5a718ac357e4cd3da3/6232276ecb324b5c3d0c3276_dev-thumbnail-image-developer-webflow-ecommerce-template.png"
-                    alt="Agency Website Development for Dev X" className="portfolio-thumbnail-image" /> */}
+                  <Image
+                    className="inline-block max-w-full align-middle"
+                    width={600}
+                    height={600}
+                    src="/shot.png"
+                    alt="Agency Website Development for Dev X"
+                  />
                 </Link>
               </div>
             </div>
           </div>
         </div>
         <div >
-          <div className="mg-bottom-40px w-dyn-list">
-            <div role="list" className="w-dyn-items">
-              <div role="listitem" className="w-dyn-item">
-                <Link href="/portfolio/crypto-website-development-for-defi-x" className="card portfolio-project w-inline-block">
-                  <div className="badges-top-wrapper">
-                    <div className="badge-primary small">React JS</div>
-                    <div className="badge-primary small">Web Development</div>
+          <div className="mb-10">
+            <div>
+              <div>
+                <Link
+                  href="/portfolio/agency-website-development-for-dev-x"
+                  className="relative overflow-hidden no-underline rounded-[28px] bg-[#2d343f] max-w-full inline-block w-full"
+                >
+                  <div
+                    className="absolute top-[32px] right-[32px] z-[1] grid auto-cols-fr gap-x-[16px] gap-y-[16px] grid-cols-[auto,auto] grid-rows-[auto]"
+                  >
+                    <Chip
+                      variant="bordered"
+                      color="warning"
+                      startContent={<FaJs size={18} />}
+                    >
+                      JavaScript
+                    </Chip>
+                    <Chip
+                      variant="bordered"
+                      color="danger"
+                      startContent={<DiHtml5 size={18} />}
+                    >
+                      HTML
+                    </Chip>
                   </div>
-                  <div className="portfolio-project-card-text-container">
-                    <div className="portfolio-project-logo-wrapper">
-                      {/* <Image layout="fill"
-                        src="https://assets.website-files.com/622fbc5a718ac357e4cd3da3/6232279759ed2980aff418c9_defi-project-logo-developer-webflow-ecommerce-template.png"
-                        alt="Crypto Website Development for DeFi X" /> */}
+                  <div
+                    className="relative z-[1] max-w-[430px] mt-[90px] mr-[34px] mb-[-24px] ml-[34px]"
+                  >
+                    <div className="text-white text-[34px] leading-[1.441em] font-bold mb-0">
+                      JuegoMemoria
                     </div>
-                    <h2 className="display-5 mg-bottom-0">Crypto Website Development for DeFi X</h2>
+                    <h2 className="text-white text-[34px] leading-[1.441em] font-bold mb-0">
+                      juego de memoria
+                    </h2>
                   </div>
-                  {/* <Image layout="fill"
-                    src="https://assets.website-files.com/622fbc5a718ac357e4cd3da3/623227a7644f41349873cd60_defi-thumbnail-image-developer-webflow-ecommerce-template.png"
-                    alt="Crypto Website Development for DeFi X" className="portfolio-thumbnail-image" /> */}
+                  <Image
+                    className="inline-block max-w-full align-middle"
+                    width={600}
+                    height={600}
+                    src="/shot.png"
+                    alt="Agency Website Development for Dev X"
+                  />
                 </Link>
               </div>
             </div>
           </div>
-          <div className="w-dyn-list">
-            <div role="list" className="w-dyn-items">
-              <div role="listitem" className="w-dyn-item">
-                <Link href="/portfolio/trading-website-development-for-dark-x" className="card portfolio-project w-inline-block">
-                  <div className="badges-top-wrapper">
-                    <div className="badge-primary small">Webflow</div>
-                    <div className="badge-primary small">Web Development</div>
-                  </div>
-                  <div className="portfolio-project-card-text-container">
-                    <div className="portfolio-project-logo-wrapper">
-                      {/* <Image layout="fill"
-                        src="https://assets.website-files.com/622fbc5a718ac357e4cd3da3/623226cfc08f430a864a33ca_dark-project-logo-developer-webflow-ecommerce-template.png"
-                        alt="Trading Website Development for Dark X" /> */}
-                    </div>
-                    <h2 className="display-5 mg-bottom-0">Trading Website Development for Dark X</h2>
-                  </div>
-                  {/* <Image layout="fill"
-                    src="https://assets.website-files.com/622fbc5a718ac357e4cd3da3/623226da502a8939ea536581_dark-thumbnail-image-developer-webflow-ecommerce-template.png"
-                    alt="Trading Website Development for Dark X" className="portfolio-thumbnail-image" /> */}
-                </Link>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>

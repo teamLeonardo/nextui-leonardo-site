@@ -5,6 +5,8 @@ import { fontSpace } from "@/config/fonts";
 import { Providers } from "./providers";
 import { Navbar } from "@/components/navbar";
 import clsx from "clsx";
+import Link from "next/link"
+import { HomeFooter } from "@/components/Home.footer";
 
 export const metadata: Metadata = {
 	title: {
@@ -42,10 +44,7 @@ export default function RootLayout({
 					<div className="relative block">
 						<Navbar />
 						{children}
-						<footer className="w-full flex items-center justify-center py-3">
-							<span className="text-default-600">Powered by</span>
-							<p className="text-primary">NextUI</p>
-						</footer>
+						<HomeFooter />
 					</div>
 				</Providers>
 			</body>
