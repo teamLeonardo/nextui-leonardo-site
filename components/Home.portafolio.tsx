@@ -8,22 +8,28 @@ import { DiHtml5 } from "react-icons/di"
 export const HomePortafolio = () => (
   <section className="relative bg-[#242a33] pb-[240px] pt-[240px] z-20">
     <div className="container mx-auto max-w-7xl px-[24px]">
-      <div className="grid items-center gap-x-[32px] gap-y-[32px] grid-cols-2 auto-cols-fr">
-        <div >
+      <div className=" gap-x-[32px] gap-y-[32px] flex flex-wrap ">
+        <div className="w-full md:w-[400px] lg:w-[550px] xl:w-[600px]">
           <div className="mb-[108px]">
             <div className="mb-[24px] text-[20px] leading-[1.1em] text-white font-bold tracking-wider uppercase">
-              <span className="text-[#075fe4] mr-1">/</span>
-              My portafolio
+              <span className="text-[#075fe4] mr-1">/ </span>
+              Mi Portafolio
             </div>
             <h2 className="text-white text-[52px] leading-[1em] font-bold mt-0 mb-[48px]">
-              Take a look at the latest projects I’ve done
+              Echa un vistazo a los proyectos más recientes que he realizado.
             </h2>
-            <Link href="/#"
-              className="link-wrapper white w-inline-block">
-              <div className="link-text heading-h3-size">Browse all projects</div>
-              <div className="line-square-icon link-icon-right _26px"></div>
-              <div className="link-underline-wrapper">
-                <div style={{ width: "0%" }} className="link-underline"></div>
+            <Link href="/about"
+              className="text-white mt-auto relative inline-block whitespace-nowrap duration-0 ease-linear delay-0 transition-none max-w-full bg-transparent no-underline">
+              <div
+                className="text-[16px] leading-[1.125em] tracking-wider uppercase inline-block duration-300 ease-in delay-0 transition-colors"
+              >
+                Mas Trabajos
+              </div>
+              <div className="inline-block ml-[6px]">
+                {/* <ArrowRightIcon className="h-4 w-4" /> */}
+              </div>
+              <div className="min-h-[1.5px] w-full mt-[6px] bg-[#5d6c83]">
+                <div className="min-h-[1.5px]" style={{ width: "0%", height: "1.5px" }}></div>
               </div>
             </Link>
           </div>
@@ -74,7 +80,7 @@ export const HomePortafolio = () => (
             </div>
           </div>
         </div>
-        <div >
+        <div className="w-full md:w-[400px] lg:w-[550px] xl:w-[600px]">
           <div className="mb-10">
             <div>
               <div>
