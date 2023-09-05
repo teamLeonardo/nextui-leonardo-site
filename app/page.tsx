@@ -1,5 +1,4 @@
 import { HomeAbout } from "@/components/Home.about";
-import { HomeFooter } from "@/components/Home.footer";
 import { HomePortafolio } from "@/components/Home.portafolio";
 import { HomeSkills } from "@/components/Home.skills";
 import { BsArrowDown } from "react-icons/bs"
