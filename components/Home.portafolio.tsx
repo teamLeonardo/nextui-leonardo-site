@@ -18,7 +18,7 @@ export const HomePortafolio = () => (
             <h2 className="text-white text-[52px] leading-[1em] font-bold mt-0 mb-[48px]">
               Echa un vistazo a los proyectos más recientes que he realizado.
             </h2>
-            <Link href="/about"
+            <a href="/portafolio"
               className="text-white mt-auto relative inline-block whitespace-nowrap duration-0 ease-linear delay-0 transition-none max-w-full bg-transparent no-underline">
               <div
                 className="text-[16px] leading-[1.125em] tracking-wider uppercase inline-block duration-300 ease-in delay-0 transition-colors"
@@ -31,13 +31,13 @@ export const HomePortafolio = () => (
               <div className="min-h-[1.5px] w-full mt-[6px] bg-[#5d6c83]">
                 <div className="min-h-[1.5px]" style={{ width: "0%", height: "1.5px" }}></div>
               </div>
-            </Link>
+            </a>
           </div>
           <div >
             <div >
               <div >
                 <Link
-                  href="/portfolio/agency-website-development-for-dev-x"
+                  href="https://aliexpress-next-mlsfeqmyo-teamleonardo.vercel.app/"
                   className="relative overflow-hidden no-underline rounded-[28px] bg-[#2d343f] max-w-full inline-block w-full"
                 >
                   <div
@@ -72,7 +72,7 @@ export const HomePortafolio = () => (
                     className="inline-block max-w-full align-middle"
                     width={600}
                     height={600}
-                    src="/shot.png"
+                    src="/aliexpress.png"
                     alt="Agency Website Development for Dev X"
                   />
                 </Link>
